@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## What is this Web app?
+Japanese explanation is below / 日本語の説明は下のほうにあります。
 
-## Getting Started
+This is an English puzzle game. It features a 10x10 grid where each cell can contain one letter. When you form a valid English word, its meaning is displayed.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Folder structure
+/src
+  /pages
+    index.tsx (Homepage and main game view)
+    _app.tsx (Global styles and layout settings)
+  /components
+    Grid.tsx (Component displaying a 10x10 grid)
+    Cell.tsx (Component representing each cell of the grid)
+    WordInput.tsx (Component for alphabet input)
+    WordDefinition.tsx (Component displaying word definitions)
+  /hooks
+    useWordValidation.ts (Custom hook containing word validation logic)
+  /services
+    dictionaryApi.ts (Service handling requests to the dictionary API)
+  /public
+    /images (Static resources like image files)
+  /styles
+    globals.css (Global styles)
+    Home.module.css (Styles specific to the homepage)
 
 ## Deploy on Vercel
+https://vercel.com/pirosiki002s-projects/newamericagon
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## このWebアプリについて
+これは英語のパズルゲームです。10×10のマスがあり、各セルに1文字を入力することができます。英単語を形成すると、その意味が表示されます。
+
+## フォルダ構成
+/src
+  /pages
+    index.tsx (ホームページとゲームのメインビュー)
+    _app.tsx (グローバルスタイルとレイアウトの設定)
+  /components
+    Grid.tsx (10x10のグリッドを表示するコンポーネント)
+    Cell.tsx (グリッドの各マス目を表すコンポーネント)
+    WordInput.tsx (アルファベット入力用のコンポーネント)
+    WordDefinition.tsx (単語の意味を表示するコンポーネント)
+  /hooks
+    useWordValidation.ts (単語検証のロジックを含むカスタムフック)
+  /services
+    dictionaryApi.ts (辞書APIへのリクエストを扱うサービス)
+  /public
+    /images (画像ファイルなどの静的リソース)
+  /styles
+    globals.css (グローバルスタイル)
+    Home.module.css (ホームページ専用のスタイル)
+
+## Vercelで動作確認
+https://vercel.com/pirosiki002s-projects/newamericagon
