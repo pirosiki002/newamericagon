@@ -5,23 +5,25 @@ This is an English puzzle game. It features a 10x10 grid where each cell can con
 
 ## Folder structure
 /src
-  /pages
-    index.tsx (Homepage and main game view)
-    _app.tsx (Global styles and layout settings)
-  /components
-    Grid.tsx (Component displaying a 10x10 grid)
-    Cell.tsx (Component representing each cell of the grid)
-    WordInput.tsx (Component for alphabet input)
-    WordDefinition.tsx (Component displaying word definitions)
-  /hooks
-    useWordValidation.ts (Custom hook containing word validation logic)
-  /services
-    dictionaryApi.ts (Service handling requests to the dictionary API)
-  /public
-    /images (Static resources like image files)
-  /styles
-    globals.css (Global styles)
-    Home.module.css (Styles specific to the homepage)
+  /app
+    page.tsx (top page saver side)
+    page.client.tsx(client side)
+    /pages
+      _app.tsx (Global styles and layout settings)
+    /components
+      Grid.tsx (Component displaying a 10x10 grid)
+      Cell.tsx (Component representing each cell of the grid)
+      WordInput.tsx (Component for alphabet input)
+      WordDefinition.tsx (Component displaying word definitions)
+    /hooks
+      useWordValidation.ts (Custom hook containing word validation logic)
+    /services
+      dictionaryApi.ts (Service handling requests to the dictionary API)
+    /public
+      /images (Static resources like image files)
+    /styles
+      globals.css (Global styles)
+      Home.module.css (Styles specific to the homepage)
 
 ## Deploy on Vercel
 https://vercel.com/pirosiki002s-projects/newamericagon
@@ -32,23 +34,25 @@ https://vercel.com/pirosiki002s-projects/newamericagon
 
 ## フォルダ構成
 /src
-  /pages
-    index.tsx (ホームページとゲームのメインビュー)
-    _app.tsx (グローバルスタイルとレイアウトの設定)
-  /components
-    Grid.tsx (10x10のグリッドを表示するコンポーネント)
-    Cell.tsx (グリッドの各マス目を表すコンポーネント)
-    WordInput.tsx (アルファベット入力用のコンポーネント)
-    WordDefinition.tsx (単語の意味を表示するコンポーネント)
-  /hooks
-    useWordValidation.ts (単語検証のロジックを含むカスタムフック)
-  /services
-    dictionaryApi.ts (辞書APIへのリクエストを扱うサービス)
-  /public
-    /images (画像ファイルなどの静的リソース)
-  /styles
-    globals.css (グローバルスタイル)
-    Home.module.css (ホームページ専用のスタイル)
+  /app
+    page.tsx (サーバーサイドのトップページ)
+    page.client.tsx (クライアントサイド)
+    /pages
+      _app.tsx (グローバルスタイルとレイアウトの設定)
+    /components
+      Grid.tsx (10x10のグリッドを表示するコンポーネント)
+      Cell.tsx (グリッドの各マス目を表すコンポーネント)
+      WordInput.tsx (アルファベット入力用のコンポーネント)
+      WordDefinition.tsx (単語の意味を表示するコンポーネント)
+    /hooks
+      useWordValidation.ts (単語検証のロジックを含むカスタムフック)
+    /services
+      dictionaryApi.ts (辞書APIへのリクエストを扱うサービス)
+    /public
+      /images (画像ファイルなどの静的リソース)
+    /styles
+      globals.css (グローバルスタイル)
+      Home.module.css (ホームページ専用のスタイル)
 
 ## Vercelで動作確認
 https://vercel.com/pirosiki002s-projects/newamericagon
