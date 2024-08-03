@@ -4,8 +4,9 @@
   align-items: center;
   margin-top: 50px;
   background-color: rgb(235, 225, 140);
+  color: black;
 }
 
 .container h1 {
-  font-family: "HackGenNerd"; /* HackGenNerdは、そのままでは使えません */
+  /* font-family: "HackGenNerd"; HackGenNerdは、そのままでは使えません */
 }
