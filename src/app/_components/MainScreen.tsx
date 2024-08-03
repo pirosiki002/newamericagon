@@ -1,5 +1,5 @@
-import React from 'react';
-import GameBoard from './GameBoard';
+import React from "react";
+import GameBoard from "./GameBoard/GameBoard";
 
 const MainScreen = () => {
   // 状態管理のためのコードがここに来ます

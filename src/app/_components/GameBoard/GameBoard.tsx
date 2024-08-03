@@ -1,8 +1,8 @@
 "use client";
-// import React from "react";
 import { useState, useEffect } from "react";
 import useDic from "@/app/hooks/useDic";
 import styles from "./GameBoard.module.css";
+import InputTable from "../InputTable/InputTable";
 
 // 盤面の状態を管理する
 const BOARD_SIZE = 7;
@@ -16,7 +16,6 @@ const createInitialBoard = (size: number) => {
 
 const GameBoard = () => {
   // 辞書機能を使うために、useDic.tsxからの処理を呼び出す
-  // const size = BOARD_SIZE;
   const [board, setBoard] = useState(createInitialBoard(BOARD_SIZE)); // useStateを使って盤面の状態を管理。値を更新するたびに再描画する
   const [selectedRow, setSelectedRow] = useState(0); // 選択した行の状態管理
   const [selectedCol, setSelectedCol] = useState(0); // 選択した列の状態管理
@@ -60,17 +59,21 @@ const GameBoard = () => {
   // リセットボタンを押したときの処理
   const handleReset = () => {
     setInputCells([]); // inputCellsをリセット
-    // setBoard(createInitialBoard(size));
     setBoard(createInitialBoard(BOARD_SIZE));
   };
 
   return (
     <>
-      GameBorad here
       <div className={styles.container}>
         <h1>Pirorin Game</h1>
-        {/* <InputTable size={size} board={board} setBoard={setBoard}  onCellClick={handleCellClick}  inputCells={inputCells} />
-      <ResetButton onReset={handleReset} /> */}
+        <InputTable
+          size={BOARD_SIZE}
+          board={board}
+          setBoard={setBoard}
+          onCellClick={handleCellClick}
+          inputCells={inputCells}
+        />
+        {/* <ResetButton onReset={handleReset} /> */}
         <p>English word here</p>
         <h2>Col：{verticalQuery}</h2>
         <li>{results.vertical}</li>
