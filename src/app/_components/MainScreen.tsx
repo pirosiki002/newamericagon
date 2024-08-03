@@ -1,5 +1,5 @@
 import React from 'react';
-// 他のコンポーネントのインポートが必要です
+import GameBoard from './GameBoard';
 
 const MainScreen = () => {
   // 状態管理のためのコードがここに来ます
@@ -8,6 +8,7 @@ const MainScreen = () => {
     <div>
       <h1>Americagon</h1>
       {/* ここに他のコンポーネントを配置します */}
+      <GameBoard />
       {/* <GameBoard />
       <ScoreBoard />
       <Timer /> */}
