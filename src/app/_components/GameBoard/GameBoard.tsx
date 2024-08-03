@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import useDic from "@/app/hooks/useDic";
 import styles from "./GameBoard.module.css";
 import InputTable from "../InputTable/InputTable";
+import ResetButton from "../ResetButton/ResetButton";
 
 // 盤面の状態を管理する
 const BOARD_SIZE = 7;
@@ -73,7 +74,7 @@ const GameBoard = () => {
           onCellClick={handleCellClick}
           inputCells={inputCells}
         />
-        {/* <ResetButton onReset={handleReset} /> */}
+        <ResetButton onReset={handleReset} />
         <p>English word here</p>
         <h2>Col：{verticalQuery}</h2>
         <li>{results.vertical}</li>

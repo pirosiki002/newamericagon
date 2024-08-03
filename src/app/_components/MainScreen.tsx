@@ -6,8 +6,6 @@ const MainScreen = () => {
 
   return (
     <div>
-      <h1>Americagon</h1>
-      {/* ここに他のコンポーネントを配置します */}
       <GameBoard />
       {/* <GameBoard />
       <ScoreBoard />
